@@ -80,7 +80,7 @@ if __name__ == '__main__':
             r = results[0]
             frame = display_instances( frame, r['rois'], r['masks'], r['class_ids'], class_names, r['scores'])
         cv2.imshow('frame', frame)
-        cv2.waitKey(60)
+        cv2.waitKey(240)
         # if cv2.waitKey(1) & 0xFF == ord('q'):
         #     break
 
