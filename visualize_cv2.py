@@ -10,7 +10,6 @@ ROOT_DIR = os.getcwd()
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 COCO_MODEL_PATH = "mask_rcnn_peruvian_bill_0005.h5"
 
-
 class InferenceConfig(Config):
     NAME = "PERUVIAN_BILL"
     NUM_CLASSES = 1 + 4
@@ -19,51 +18,32 @@ class InferenceConfig(Config):
     STEPS_PER_EPOCH = 100
     LEARNING_RATE = 0.0006
 
-
 config = InferenceConfig()
 config.display()
 
-model = MaskRCNN(
-    mode="inference", model_dir=MODEL_DIR, config=config
-)
+model = MaskRCNN( mode="inference", model_dir=MODEL_DIR, config=config )
 model.load_weights(COCO_MODEL_PATH, by_name=True)
-class_names = [
-    'BG', 'B10','B100','B20','B50'
-]
-
+class_names = [ 'BG', 'B10','B100','B20','B50']
 
 def random_colors(N):
     np.random.seed(1)
     colors = [tuple(255 * np.random.rand(3)) for _ in range(N)]
     return colors
 
-
 colors = random_colors(len(class_names))
-class_dict = {
-    name: color for name, color in zip(class_names, colors)
-}
-
+class_dict = { name: color for name, color in zip(class_names, colors) }
 
 def apply_mask(image, mask, color, alpha=0.5):
-    """apply mask to image"""
     for n, c in enumerate(color):
-        image[:, :, n] = np.where(
-            mask == 1,
+        image[:, :, n] = np.where( mask == 1,
             image[:, :, n] * (1 - alpha) + alpha * c,
-            image[:, :, n]
-        )
+            image[:, :, n])
     return image
 
-
 def display_instances(image, boxes, masks, ids, names, scores):
-    """
-        take the image and results and apply the mask, box, and Label
-    """
     n_instances = boxes.shape[0]
 
-    if not n_instances:
-        print('NO INSTANCES TO DISPLAY')
-    else:
+    if n_instances:
         assert boxes.shape[0] == masks.shape[-1] == ids.shape[0]
 
     for i in range(n_instances):
@@ -79,21 +59,13 @@ def display_instances(image, boxes, masks, ids, names, scores):
 
         image = apply_mask(image, mask, color)
         image = cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
-        image = cv2.putText(
-            image, caption, (x1, y1), cv2.FONT_HERSHEY_COMPLEX, 0.7, color, 2
-        )
+        image = cv2.putText( image, caption, (x1, y1), cv2.FONT_HERSHEY_COMPLEX, 0.7, color, 2 )
 
     return image
 
-
 if __name__ == '__main__':
-    """
-        test everything
-    """
-
     capture = cv2.VideoCapture(0)
 
-    # these 2 lines can be removed if you dont have a 1080p camera.
     capture.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     import time
