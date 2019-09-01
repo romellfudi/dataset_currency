@@ -39,3 +39,5 @@ while(capture.isOpened()):
 capture.release()
 output.release()
 cv2.destroyAllWindows()
+
+print('The video was processed')
