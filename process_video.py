@@ -8,12 +8,21 @@ size = (
     int(capture.get(cv2.CAP_PROP_FRAME_HEIGHT))
 )
 codec = cv2.VideoWriter_fourcc(*'DIVX')
-output = cv2.VideoWriter('videofile_masked.avi', codec, 60.0, size)
+fps = capture.get(cv2.CAP_PROP_FPS)
+output = cv2.VideoWriter('videofile_masked.avi', codec, fps, size)
+frame_count = int(capture.get(cv2.CAP_PROP_FRAME_COUNT))
+duration = frame_count/fps
+minutes = int(duration/60)
+seconds = duration%60
+
+print('fps = ' + str(fps))
+print('number of frames = ' + str(frame_count))
+print('duration (S) = ' + str(duration))
+print('duration (M:S) = ' + str(minutes) + ':' + str(seconds))
 
 while(capture.isOpened()):
     ret, frame = capture.read()
     if ret:
-        # add mask to frame
         results = model.detect([frame], verbose=0)
         r = results[0]
         frame = display_instances(
