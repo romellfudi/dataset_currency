@@ -1,29 +1,19 @@
 item {
   id: 1
-  name: 'nine'
+  name: 'B10'
 }
 
 item {
   id: 2
-  name: 'ten'
+  name: 'B20'
 }
 
 item {
   id: 3
-  name: 'jack'
+  name: 'B50'
 }
 
 item {
   id: 4
-  name: 'queen'
-}
-
-item {
-  id: 5
-  name: 'king'
-}
-
-item {
-  id: 6
-  name: 'ace'
+  name: 'B100'
 }
