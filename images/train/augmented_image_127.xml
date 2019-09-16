@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train_billetes</folder>
+	<filename>augmented_image_127.jpg</filename>
+	<path>C:\Users\Juan\Desktop\train_billetes\augmented_image_127.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>B50</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>99</xmin>
+			<ymin>5</ymin>
+			<xmax>475</xmax>
+			<ymax>159</ymax>
+		</bndbox>
+	</object>
+</annotation>
