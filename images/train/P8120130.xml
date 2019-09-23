@@ -1,0 +1,26 @@
+<annotation>
+	<folder>IMGS</folder>
+	<filename>P8120130.JPG</filename>
+	<path>C:\Users\Intel\Documents\UNIVERSIDAD DE LIMA\IDIC\2019\INDENTIFICADOR BILLETES\IMGS\P8120130.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>B20</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>20</xmin>
+			<ymin>19</ymin>
+			<xmax>573</xmax>
+			<ymax>466</ymax>
+		</bndbox>
+	</object>
+</annotation>

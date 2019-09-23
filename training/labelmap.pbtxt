@@ -1,0 +1,19 @@
+item {
+  id: 1
+  name: 'B10'
+}
+
+item {
+  id: 2
+  name: 'B20'
+}
+
+item {
+  id: 3
+  name: 'B50'
+}
+
+item {
+  id: 4
+  name: 'B100'
+}
