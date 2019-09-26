@@ -1,4 +1,4 @@
-# EDA & ML for Peruvian Bills/Notes
+# Peruvian Bills/Notes Detector
 
 ## Data Science technologies for Identify and detect peruvian currency (bills and notes)
 
