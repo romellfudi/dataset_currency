@@ -5,6 +5,9 @@
 ### By Romell Domínguez
 [![](https://raw.githubusercontent.com/romellfudi/assets/master/favicon.ico#favico)](https://www.romellfudi.com/)
 
+## Target
+![](preview/target_image.jpg)
+
 ### You can also view online via:
 
 #### Multiclass Logistic Regression -> [![NBViwer](https://img.shields.io/badge/display-nbviwer-blue.svg)](http://nbviewer.jupyter.org/github/romellfudi/dataset_currency/blob/master/Jose_Taquia_All_TransferLearning_LRMultiClass_saveload.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/romellfudi/dataset_currency/master?filepath=Jose_Taquia_All_TransferLearning_LRMultiClass_saveload.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/romellfudi/dataset_currency/blob/master/Jose_Taquia_All_TransferLearning_LRMultiClass_saveload.ipynb)
