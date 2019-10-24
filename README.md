@@ -30,7 +30,7 @@
 
 MIT. See the LICENSE file for the copyright notice.
 
-**2018, September**
+**2019, October**
 
 <style>
 img[src*='#favico'] { 
