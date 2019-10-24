@@ -5,7 +5,7 @@
 ### By Romell Domínguez
 [![](https://raw.githubusercontent.com/romellfudi/assets/master/favicon.ico#favico)](https://www.romellfudi.com/)
 
-## Target
+## Target of Repository:
 ![](preview/target_image.jpg)
 
 ### You can also view online via:
@@ -15,6 +15,11 @@
 #### Mask RCNN -> [![NBViwer](https://img.shields.io/badge/display-nbviwer-blue.svg)](http://nbviewer.jupyter.org/github/romellfudi/dataset_currency/blob/master/Mask_RCNN_worked.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/romellfudi/dataset_currency/master?filepath=Mask_RCNN_worked.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/romellfudi/dataset_currency/blob/master/Mask_RCNN_worked.ipynb)
 
 #### TensorFlow Object Detection -> [![NBViwer](https://img.shields.io/badge/display-nbviwer-blue.svg)](http://nbviewer.jupyter.org/github/romellfudi/dataset_currency/blob/master/Peruvian_Detect_Multiple_Bills_2_rates.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/romellfudi/dataset_currency/master?filepath=Peruvian_Detect_Multiple_Bills_2_rates.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/romellfudi/dataset_currency/blob/master/Peruvian_Detect_Multiple_Bills_2_rates.ipynb)
+
+#### YOLO V2 Darknet -> [![NBViwer](https://img.shields.io/badge/display-nbviwer-blue.svg)](http://nbviewer.jupyter.org/github/romellfudi/dataset_currency/blob/master/yolo_v2_tiny-bills.ipynb) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/romellfudi/dataset_currency/master?filepath=yolo_v2_tiny-bills.ipynb) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/romellfudi/dataset_currency/blob/master/yolo_v2_tiny-bills.ipynb)
+
+### Yolo Preview:
+![](preview/yolo.png)
 
 ## Requirements
 
