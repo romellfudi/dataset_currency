@@ -1,0 +1,15 @@
+opencv_python==4.4.0.44
+tqdm==4.49.0
+tensorflow==2.0.0
+matplotlib==3.3.1
+numpy==1.19.1
+pandas==1.1.1
+asposestorage==1.0.2
+keras==2.4.3
+mrcnn==0.2
+object_detection==0.0.3
+Pillow==8.0.0
+protobuf==3.13.0
+scikit_learn==0.23.2
+termcolor==1.1.0
+utils==1.0.1

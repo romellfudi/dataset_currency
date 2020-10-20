@@ -19,7 +19,7 @@ def insensitive_glob(pattern):
 
 
 # %%
-%%timeit -n 1
+## %%timeit -n 1
 for filename in insensitive_glob(os.path.join('data', '*', '*.{}').format(extension)):
     if '.DS_Store' in filename:
         continue
