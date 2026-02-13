@@ -6,6 +6,8 @@
 [![](https://raw.githubusercontent.com/romellfudi/assets/master/favicon.ico#favico)](https://www.romellfudi.com/)
 
 ## Target of Repository:
+<img width="2048" height="1024" alt="Gemini_Generated_Image" src="https://github.com/user-attachments/assets/69d8bdc7-d0ae-4e87-a261-4cce9487d16a" />
+
 ![](preview/target_image.jpg)
 
 ### You can also view online via:
